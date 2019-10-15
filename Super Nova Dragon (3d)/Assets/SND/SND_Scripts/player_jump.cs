@@ -5,7 +5,8 @@ using UnityEngine;
 public class player_jump : MonoBehaviour {
     public bool onGround;
     private Rigidbody rb;
- 
+   
+    Rigidbody myRb;
     void Start() {
         onGround = true;
         rb = GetComponent<Rigidbody>();
@@ -14,10 +15,16 @@ public class player_jump : MonoBehaviour {
   
     void Update()
     {
+
         if (onGround)
         { if (Input.GetButtonDown("Jump"))
             { rb.velocity = new Vector3(0f, 5f, 0f);
-                onGround = false; } } } 
+                onGround = false; } }
+
+
+
+        
+    } 
     
 	void OnCollisionEnter(Collision other)
     { if (other.gameObject.CompareTag
