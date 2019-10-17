@@ -769,6 +769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1248805489}
   - component: {fileID: 1248805490}
+  - component: {fileID: 1248805491}
   m_Layer: 0
   m_Name: fire
   m_TagString: Untagged
@@ -804,9 +805,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clone: {fileID: 3067190434945320540, guid: eccae8ba8b3b34672b0f43283b8c358d, type: 3}
   spawnLocation: {x: 0, y: 0, z: 0}
+  fireRB: {fileID: 3067190434945320541, guid: eccae8ba8b3b34672b0f43283b8c358d, type: 3}
   knight: {fileID: 2032219736}
   forceAmt: 30
   distThrest: 50
+--- !u!54 &1248805491
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248805488}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1348216286
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,6 +839,7 @@ GameObject:
   - component: {fileID: 1348216291}
   - component: {fileID: 1348216290}
   - component: {fileID: 1348216292}
+  - component: {fileID: 1348216288}
   m_Layer: 0
   m_Name: Nova
   m_TagString: Nova
@@ -842,6 +861,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   moveSound: {fileID: 0}
+--- !u!114 &1348216288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348216286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2668df21964747adbc382161dc33b98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectSound: {fileID: 0}
 --- !u!4 &1348216289
 Transform:
   m_ObjectHideFlags: 0
@@ -1069,8 +1101,8 @@ GameObject:
   - component: {fileID: 2032219733}
   - component: {fileID: 2032219732}
   m_Layer: 0
-  m_Name: kinght
-  m_TagString: Preditor
+  m_Name: knight
+  m_TagString: Knight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1157,7 +1189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032219731}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 9.59}
+  m_LocalPosition: {x: 1.31, y: 1, z: 5.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

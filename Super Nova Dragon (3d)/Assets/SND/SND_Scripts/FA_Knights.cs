@@ -6,8 +6,9 @@ public class FA_Knights : MonoBehaviour
 {
     public GameObject clone;
     public Vector3 spawnLocation;
+    
 
-    Rigidbody fireRB;
+    public Rigidbody fireRB;
     public Transform knight;
     public float forceAmt;
     public float distThrest;

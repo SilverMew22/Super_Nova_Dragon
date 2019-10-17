@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Nova_Kill_Knight : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+
+    //public AudioSource collectSound;
+
+    private void OnTriggerEnter(Collider col)
     {
-        
+        if (col.gameObject.CompareTag("Knight"))
+        {
+            //collectSound.Play();
+            keepScore.Score += 100;
+            Destroy(gameObject);
+        }
     }
 }
