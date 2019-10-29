@@ -6,13 +6,13 @@ public class Nova_mover : MonoBehaviour
 {
     //Rigidbody myRb;
     //public float multiplier = 10f;
-    public float speed;
+    //public float speed;
 
-    Animator myAnim;
-    AudioSource audioS;
-    public AudioClip moveSound;
+    static Animator myAnim;
+    //AudioSource audioS;
+    //public AudioClip moveSound;
 
-    Rigidbody myRb;
+    //Rigidbody myRb;
     public float multiplier = 10f;
     //int Prey_Eaten;
     //public int eatThresh = 3;
@@ -20,9 +20,9 @@ public class Nova_mover : MonoBehaviour
     void Start()
     {
         myAnim = GetComponent<Animator>();
-        audioS = GetComponent<AudioSource>();
+        //audioS = GetComponent<AudioSource>();
 
-        myRb = GetComponent<Rigidbody>();
+        //myRb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -30,33 +30,32 @@ public class Nova_mover : MonoBehaviour
     {
         //if (Input.GetKeyDown(KeyCode.W))
         //myRb.AddForce(new Vector3(0f, 0f, 1f) * multiplier);
-        myAnim.SetInteger("state", 0);
+        //myAnim.SetInteger("state", 0);
 
         if (Input.GetKeyDown(KeyCode.W))
-        {
-            myRb.AddForce(new Vector3(0f, 0f, 1f) * multiplier);
+        {   
             myAnim.SetInteger("state", 1);
         }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-           myRb.AddForce(new Vector3(-1f, 0f, 0f) * multiplier);
-            myAnim.SetInteger("state", 1);
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            myRb.AddForce(new Vector3(0f, 0f, -1f) * multiplier);
-            myAnim.SetInteger("state", 1);
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-           myRb.AddForce(new Vector3(1f, 0f, 0f) * multiplier);
-            myAnim.SetInteger("state", 1);
-        }
+        //if (Input.GetKeyDown(KeyCode.A))
+        //{
+          
+        //    myAnim.SetInteger("state", 1);
+        //}
+        //if (Input.GetKeyDown(KeyCode.S))
+        //{
+           
+        //    myAnim.SetInteger("state", 1);
+        //}
+        //if (Input.GetKeyDown(KeyCode.D))
+        //{
+       
+        //    myAnim.SetInteger("state", 1);
+        //}
     }
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag("Preditor"))
+        if (col.gameObject.CompareTag("Knight"))
         {        
             //Destroy(gameObject);
             }

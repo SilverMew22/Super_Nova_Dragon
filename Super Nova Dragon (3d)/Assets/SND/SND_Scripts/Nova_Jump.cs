@@ -7,14 +7,14 @@ public class Nova_Jump : MonoBehaviour
     public bool onGround;
     private Rigidbody rb;
     Rigidbody myRb;
+    static Animator myAnim;
 
-   
     void Start()
     {
         onGround = true;
         rb = GetComponent<Rigidbody>();
+        myAnim = GetComponent<Animator>();
 
-        
     }
 
 
@@ -27,7 +27,9 @@ public class Nova_Jump : MonoBehaviour
             {
                 rb.velocity = new Vector3(0f, 5f, 0f);
                 onGround = false;
-               
+
+                myAnim.SetInteger("state", 4);
+
             }
         }
 

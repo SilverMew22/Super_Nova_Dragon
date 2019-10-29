@@ -7,13 +7,13 @@ public class Score : MonoBehaviour
 {
     
   
-    public AudioSource collectSound;
+    //public AudioSource collectSound;
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag("Bounce"))
+        if (col.gameObject.CompareTag("Nova"))
         {
-            collectSound.Play();
+            //collectSound.Play();
             keepScore.Score += 100;
             Destroy(gameObject);
         }
