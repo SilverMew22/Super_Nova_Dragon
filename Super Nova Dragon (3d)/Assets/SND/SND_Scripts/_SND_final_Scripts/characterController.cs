@@ -24,6 +24,7 @@ public class characterController : MonoBehaviour
         translation *= Time.deltaTime;
         straffe *= Time.deltaTime;
         transform.Translate(straffe, 0, translation);
+        myAnim.SetInteger("state", 0);
 
 
         if (Input.GetKeyDown(KeyCode.W))
