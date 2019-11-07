@@ -17,6 +17,8 @@ public class spawner : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.T))
-        { Instantiate(clone, spawnLocation, Quaternion.identity); }
+
+
+{ Instantiate(clone, spawnLocation, Quaternion.identity); }
     }
 }

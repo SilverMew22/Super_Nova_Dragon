@@ -6,12 +6,16 @@ public class characterController : MonoBehaviour
 {
     public float speed = 10.0f;
     static Animator myAnim;
-
+    public bool onGround;
+    private Rigidbody rb;
+    Rigidbody myRb;
 
     // Start is called before the first frame update
     void Start()
-    {
-
+    {//to jump
+        onGround = true;
+        rb = GetComponent<Rigidbody>();
+        //to move and play animation
         myAnim = GetComponent<Animator>();
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -26,16 +30,35 @@ public class characterController : MonoBehaviour
         transform.Translate(straffe, 0, translation);
         myAnim.SetInteger("state", 0);
 
+        if (Input.GetKey(KeyCode.W))
+            {
+            myAnim.SetInteger("state", 1);           
+        }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.A))
+        {
+            myAnim.SetInteger("state", 1);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            myAnim.SetInteger("state", 1);
+        }
+        if (Input.GetKey(KeyCode.D))
         {
             myAnim.SetInteger("state", 1);
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if (onGround)
         {
-            myAnim.SetInteger("state", 4);
+            if (Input.GetButton("Jump"))
+            {
+                rb.velocity = new Vector3(0f, 5f, 0f);
+                onGround = false;
+
+                myAnim.SetInteger("state", 4);
+            }
         }
+
 
         if (Input.GetKeyDown("escape"))
         {
