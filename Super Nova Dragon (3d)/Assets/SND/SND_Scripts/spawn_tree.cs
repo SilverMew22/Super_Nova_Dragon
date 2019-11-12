@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class spawner : MonoBehaviour
+public class spawn_tree : MonoBehaviour
 {
     public GameObject clone;
     public Vector3 spawnLocation;
@@ -10,15 +10,19 @@ public class spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))
+        //change if to a time condition (night) and stop spawning once goal it met
+        if (Input.GetKeyDown(KeyCode.T))
 
 
-{ Instantiate(clone, spawnLocation, Quaternion.identity); }
+        { Instantiate(clone, spawnLocation, Quaternion.identity);
+            
+        }
+        
     }
 }
