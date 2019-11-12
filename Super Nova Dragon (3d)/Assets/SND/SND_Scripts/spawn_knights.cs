@@ -17,7 +17,7 @@ public class spawn_knights : MonoBehaviour
     void Update()
     {
         //change if to a time condition (night) and stop spawning once goal it met
-        if (Input.GetKeyDown(KeyCode.Y))
+        if (Input.GetKeyDown(KeyCode.K))
 
         { Instantiate(clone, spawnLocation, Quaternion.identity); }
     }

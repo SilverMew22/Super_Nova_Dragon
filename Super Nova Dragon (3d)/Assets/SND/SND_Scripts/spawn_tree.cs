@@ -10,7 +10,7 @@ public class spawn_tree : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Instantiate(clone, spawnLocation, Quaternion.identity);
     }
 
     // Update is called once per frame
@@ -20,8 +20,7 @@ public class spawn_tree : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
 
 
-        { Instantiate(clone, spawnLocation, Quaternion.identity);
-            
+        { Instantiate(clone, spawnLocation, Quaternion.identity);          
         }
         
     }
