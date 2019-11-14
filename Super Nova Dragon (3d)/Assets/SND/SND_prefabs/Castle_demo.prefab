@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7460195146694598178}
   - component: {fileID: 7460195146694598205}
   - component: {fileID: 7460195146694598204}
-  - component: {fileID: 7460195146694598206}
+  - component: {fileID: 2789146563817571412}
   m_Layer: 0
   m_Name: Castle_demo
   m_TagString: Castle
@@ -123,7 +123,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 1.1, z: 1.1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7460195146694598206
+--- !u!114 &2789146563817571412
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,6 +132,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7460195146694598179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d6abd926202146e981a597fb7979d23, type: 3}
+  m_Script: {fileID: 11500000, guid: f05e20ce8ab2e401b88a9f6220f92101, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clone: {fileID: 4889482896959518223, guid: da2e5fd3f37ab48f3811c5533d1a7478, type: 3}
+  spawnLocation_cas: {x: 0, y: 0, z: 0}
+  spawnLocation_ground: {x: 7.5, y: 1, z: -14}

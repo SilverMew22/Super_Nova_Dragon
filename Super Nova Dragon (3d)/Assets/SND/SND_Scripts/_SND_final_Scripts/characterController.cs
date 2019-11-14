@@ -52,7 +52,7 @@ public class characterController : MonoBehaviour
         {
             if (Input.GetButton("Jump"))
             {
-                rb.velocity = new Vector3(0f, 5f, 0f);
+                rb.velocity = new Vector3(0f, 6f, 0f);
                 onGround = false;
 
                 myAnim.SetInteger("state", 4);

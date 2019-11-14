@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2594889348114424407}
   - component: {fileID: 2594889348114424406}
   - component: {fileID: 2594889348114424411}
-  - component: {fileID: 3956601459660318199}
   m_Layer: 0
   m_Name: Knight_demo 1
   m_TagString: Knight
@@ -125,18 +124,3 @@ MonoBehaviour:
   cas: {fileID: 7460195146694598207, guid: 398a8a850e42249a8bc011016db6a3c3, type: 3}
   forceAmt: 30
   distThrest: 30
---- !u!114 &3956601459660318199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2594889348114424401}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee0b070b830554de08d192ed0d4b18c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prey: {fileID: 0}
-  forceAmt: 0
-  distThrest: 0
