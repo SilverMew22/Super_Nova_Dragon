@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2624734598839827044}
   - component: {fileID: 2624734598839827038}
   - component: {fileID: 2624734598839827039}
-  - component: {fileID: 2624734598839827035}
   m_Layer: 0
   m_Name: Nova
   m_TagString: Nova
@@ -113,18 +112,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2624734598839827035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2624734598839827045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f62d4a46fcadb4074bd115c5ad2b93ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2624734599765754804
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,26 +262,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nova@T-Pose
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: c4b3b9861298949469c62f5837885e2f,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 7a2237d2df9e34db0becb005b8007beb, type: 2}
-    - target: {fileID: -6057140222963153312, guid: c4b3b9861298949469c62f5837885e2f,
-        type: 3}
-      propertyPath: m_WarningMessage
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: c4b3b9861298949469c62f5837885e2f,
-        type: 3}
-      propertyPath: m_CullingMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: c4b3b9861298949469c62f5837885e2f,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c4b3b9861298949469c62f5837885e2f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -364,6 +331,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: c4b3b9861298949469c62f5837885e2f,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7a2237d2df9e34db0becb005b8007beb, type: 2}
+    - target: {fileID: -6057140222963153312, guid: c4b3b9861298949469c62f5837885e2f,
+        type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: c4b3b9861298949469c62f5837885e2f,
+        type: 3}
+      propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: c4b3b9861298949469c62f5837885e2f,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4b3b9861298949469c62f5837885e2f, type: 3}

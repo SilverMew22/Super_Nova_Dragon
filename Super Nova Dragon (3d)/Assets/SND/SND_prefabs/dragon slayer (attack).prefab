@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 8505929287554235141}
   - component: {fileID: 8505929287554235140}
   - component: {fileID: 8505929287554235143}
-  - component: {fileID: 8505929287554235139}
   - component: {fileID: 8505929287554235136}
-  - component: {fileID: 2740961077859284163}
+  - component: {fileID: 8505929287554235139}
+  - component: {fileID: 3155736713187238644}
+  - component: {fileID: -9161352478093510688}
   m_Layer: 0
   m_Name: dragon slayer (attack)
   m_TagString: Untagged
@@ -94,21 +95,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8505929287554235139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8505929287554235142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee0b070b830554de08d192ed0d4b18c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prey: {fileID: 2624734598839827034, guid: a12ebb82710e74e7c9bb82c52cbc805e, type: 3}
-  forceAmt: 30
-  distThrest: 50
 --- !u!54 &8505929287554235136
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -125,7 +111,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!114 &2740961077859284163
+--- !u!114 &8505929287554235139
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,8 +120,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 8505929287554235142}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a30ccaaef448945f6b6835f2b6daa39f, type: 3}
+  m_Script: {fileID: 11500000, guid: ee0b070b830554de08d192ed0d4b18c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pred: {fileID: 438466398691109993, guid: bd1f2eb7576d74c9ab41b1f632dd1b24, type: 3}
-  forceAmt: 10
+  prey: {fileID: 2624734598839827034, guid: a12ebb82710e74e7c9bb82c52cbc805e, type: 3}
+  forceAmt: 30
+  distThrest: 50
+--- !u!114 &3155736713187238644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8505929287554235142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0bf0af6a6384178be4300f52b725b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-9161352478093510688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8505929287554235142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c4e96520bd47431180bac6308cef273, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

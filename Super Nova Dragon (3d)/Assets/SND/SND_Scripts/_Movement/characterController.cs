@@ -29,6 +29,7 @@ public class characterController : MonoBehaviour
         straffe *= Time.deltaTime;
         transform.Translate(straffe, 0, translation);
         myAnim.SetInteger("state", 0);
+        onGround = true;
 
         if (Input.GetKey(KeyCode.W))
             {
@@ -50,11 +51,10 @@ public class characterController : MonoBehaviour
 
         if (onGround)
         {
-            if (Input.GetButton("Jump"))
+            if (Input.GetButtonDown("Jump"))
             {
                 rb.velocity = new Vector3(0f, 6f, 0f);
                 onGround = false;
-
                 myAnim.SetInteger("state", 4);
             }
         }

@@ -17,27 +17,19 @@ public class Nova_Jump : MonoBehaviour
 
     }
 
-
     void Update()
     {
-
+        onGround = true;
         if (onGround)
         {
             if (Input.GetButtonDown("Jump"))
             {
                 rb.velocity = new Vector3(0f, 5f, 0f);
                 onGround = false;
-
                 myAnim.SetInteger("state", 4);
 
             }
-        }
-
-       
-
-
-
-    }
+        }    }
 
     void OnCollisionEnter(Collision other)
     {

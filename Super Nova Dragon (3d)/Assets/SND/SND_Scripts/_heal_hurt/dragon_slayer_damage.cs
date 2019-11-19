@@ -10,9 +10,15 @@ public class dragon_slayer_damage : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnCollisionEnter(Collision col)
     {
-        
-    }
-}
+        if (col.gameObject.CompareTag("Nova"))
+        {
+            Debug.Log("The slayer hit you.");
+            Player_Manager.health -= 10;
+
+        }
+
+   
+   
+}}
