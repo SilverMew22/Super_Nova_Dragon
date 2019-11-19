@@ -17461,12 +17461,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1384917870}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1384917872 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4889482896959518223, guid: da2e5fd3f37ab48f3811c5533d1a7478,
-    type: 3}
-  m_PrefabInstance: {fileID: 1384917870}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1386876792
 GameObject:
   m_ObjectHideFlags: 0
@@ -17477,6 +17471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1386876793}
   - component: {fileID: 1386876794}
+  - component: {fileID: 1386876795}
   m_Layer: 0
   m_Name: Uni_Holder
   m_TagString: Untagged
@@ -17511,11 +17506,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a32a3fe10784e7888b6b80b10fec38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Uni: {fileID: 1384917872}
+  uni: {fileID: 4889482896959518223, guid: da2e5fd3f37ab48f3811c5533d1a7478, type: 3}
+  Uni_healthBar: {fileID: 1147146674}
+--- !u!114 &1386876795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386876792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc295aaef8b2c43028258548a46573e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Uni: {fileID: 4889482896959518223, guid: da2e5fd3f37ab48f3811c5533d1a7478, type: 3}
   U_healthBar: {fileID: 1147146674}
   clone: {fileID: 4889482896959518223, guid: da2e5fd3f37ab48f3811c5533d1a7478, type: 3}
   spawnLocation_cas: {x: 0, y: 4, z: 0}
-  spawnLocation_ground: {x: 7.5, y: 0, z: -13}
+  spawnLocation_ground: {x: 7.5, y: 1.5, z: -13}
 --- !u!1 &1390180955
 GameObject:
   m_ObjectHideFlags: 0
