@@ -12,10 +12,10 @@ public class Cas_Dam_By_Knights : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag("Knight"))
+        if (col.gameObject.CompareTag("Castle"))
         {
-            //Debug.Log("The preditor hit you.");
-            Castle_Health_System.Cas_health -= 5;
+            Debug.Log("The knights hit the castle.");
+            Castle_Health_System.Cas_health -= 1;
 
         }
     }

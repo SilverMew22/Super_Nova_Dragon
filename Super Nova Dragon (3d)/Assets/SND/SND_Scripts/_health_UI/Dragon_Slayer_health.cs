@@ -5,25 +5,21 @@ using UnityEngine.UI;
 
 public class Dragon_Slayer_health : MonoBehaviour
 {
-    public static int DS_health = 200;
+    public static float DS_health = 100;
     public GameObject DS;
-    public Slider DS_healthBar;
+    public Image healthBar;
 
-
-    // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-        InvokeRepeating("ReduceHealth", 1, 1);
-    }
-    void ReduceHealth()
-    {
-        //health = health -5;
-        DS_healthBar.value = DS_health;
+        healthBar.fillAmount = DS_health / 100;
         if (DS_health <= 0)
         {
             //player.GetComponent<Animator>().SetTrigger("isDead");
             Debug.Log("The slayer is dead.");
         }
     }
-   
 }
+
+
+
+   

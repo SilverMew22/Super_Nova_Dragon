@@ -45,16 +45,16 @@ public class WallBuilder : MonoBehaviour
         }
     }
 
-    void BuildWallAtY(float y)
-    {
-        for (int zPos = 0; zPos < 10; zPos++)
-        {
-            for (int xPos = 0; xPos < 5; xPos++)
-            {
-                Instantiate(SteveTheCube, new Vector3(xPos, y, zPos), Quaternion.identity);
-            }
-        }
-    }
+    ////void BuildWallAtY(float y)
+    //{
+    //    for (int zPos = 0; zPos < 10; zPos++)
+    //    {
+    //        for (int xPos = 0; xPos < 5; xPos++)
+    //        {
+    //            Instantiate(SteveTheCube, new Vector3(xPos, y, zPos), Quaternion.identity);
+    //        }
+    //    }
+    //}
 
     void BuildWallSuperFunction(float theValueToPass, int zeroForXOneForYTwoForZ)
     {

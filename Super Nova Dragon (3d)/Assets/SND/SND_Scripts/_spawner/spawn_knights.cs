@@ -6,6 +6,7 @@ public class spawn_knights : MonoBehaviour
 {
     public GameObject clone;
     public Vector3 spawnLocation;
+    float timer = 10f;
 
     //public Transform parent;
 
@@ -18,10 +19,32 @@ public class spawn_knights : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (timer > 0)
+        {
+            timer -= Time.deltaTime;
+        }
+        else
+        {
+            Instantiate(clone, spawnLocation, Quaternion.identity);
+            //run your  code
+            timer = 10;
+
+        }
+        //timer += Time.deltaTime;
         //spawnLocation = parent.position;
         //change if to a time condition (night) and stop spawning once goal it met
-        if (Input.GetKeyDown(KeyCode.K))
+        //if (Input.GetKeyDown(KeyCode.K))
 
-        { Instantiate(clone, spawnLocation, Quaternion.identity); }
+        //{
+        //if (timer >= 10f)
+        //{
+        //    Instantiate(clone, spawnLocation, Quaternion.identity);
+        //}
+        //if (timer >= 11f)
+        //{
+        //    Instantiate(clone, spawnLocation, Quaternion.identity);
+        //}
+        //if(timer >= 20f) { timer = 0f; }
+        //}
     }
 }

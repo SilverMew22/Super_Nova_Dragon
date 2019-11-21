@@ -5,30 +5,13 @@ using UnityEngine;
 public class Knight : MonoBehaviour
 {
 
-    Rigidbody knightRB;
-    public Transform cas;
-    public float forceAmt;
-    public float distThrest;
+    //Rigidbody knightRB;
+    //public Transform cas;
+    //public float forceAmt;
+    //public float distThrest;
 
-    int knightsKilled;
-    // Start is called before the first frame update
-    void Start()
-    {
-        knightRB = GetComponent<Rigidbody>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Vector3 preyDirection = Vector3.Normalize
-        (cas.position - transform.position);
-
-
-        if (Vector3.Distance(cas.position, transform.position) <= distThrest)
-        { knightRB.AddForce(preyDirection * forceAmt); }
-
-
-    }
+    public int knightsKilled;
+    
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.CompareTag("Nova"))
