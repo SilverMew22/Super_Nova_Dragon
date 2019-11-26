@@ -5,33 +5,47 @@ using UnityEngine.UI;
 
 public class Uni_Health_System_Up : MonoBehaviour
 {
-    public static float U_health = 100;
+    public static float U_health = 100f;
     public GameObject Uni;
     public GameObject clone;
     public Vector3 spawnLocation_cas;
     public Vector3 spawnLocation_ground;
     public Image healthBar;
+    float timer = 20f;
 
 
     void Update()
     {
         healthBar.fillAmount = U_health / 100;
-    }
 
-    void ReduceHealth()
-        {      
-        //U_healthBar.value = U_health;
-        if (U_health <= 0)
+        if (U_health <= 0f)
         {
             Destroy(gameObject);
             U_health_Drained();
+            healthBar.fillAmount = timer += Time.deltaTime/100f;
         }
+
+    if (timer >= 0f)
+        {
+            timer += Time.deltaTime;
         }
-        void U_health_Drained() { 
+        else
+        {
+            //run your  code
+            timer = 20f;
+        }
+    }
+
+
+
+
+    void U_health_Drained() {
         Instantiate(clone, spawnLocation_cas, Quaternion.identity);
-   
-        if (U_health >= 1) {
-           // U_healthBar.value = U_health;
+        //U_health = timer += Time.deltaTime;
+        healthBar.fillAmount += Time.deltaTime/1f;
+
+        if (U_health >= 100f) {
+            U_health = 100;                      
             Destroy(gameObject);
             Instantiate(clone, spawnLocation_ground, Quaternion.identity);
 

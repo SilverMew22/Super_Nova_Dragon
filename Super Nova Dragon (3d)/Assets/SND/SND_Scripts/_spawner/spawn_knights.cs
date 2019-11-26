@@ -6,7 +6,7 @@ public class spawn_knights : MonoBehaviour
 {
     public GameObject clone;
     public Vector3 spawnLocation;
-    float timer = 10f;
+    float timer = 20f;
 
     //public Transform parent;
 
@@ -27,7 +27,7 @@ public class spawn_knights : MonoBehaviour
         {
             Instantiate(clone, spawnLocation, Quaternion.identity);
             //run your  code
-            timer = 10;
+            timer = 20;
 
         }
         //timer += Time.deltaTime;

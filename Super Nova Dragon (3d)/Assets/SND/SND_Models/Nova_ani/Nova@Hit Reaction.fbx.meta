@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 14ba6c6a8e708418f8dc1356dee5cd37
+guid: 7512345d58b6d4ac7a16c0236fdc8673
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable:
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Sword And Shield Death
+      name: Hit Reaction
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 69
+      lastFrame: 48
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

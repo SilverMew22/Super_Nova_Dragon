@@ -2,13 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player_Manager : MonoBehaviour
 {
     public static float health = 100;
     public GameObject player;
-    //public Slider healthBar;
     public Image healthBar;
+    private Scene scene;
+
+    void Start()
+    {
+        scene = SceneManager.GetActiveScene();
+        //if (health <= 0) {Restart(); }
+    }
 
     void Update()
     {
@@ -16,22 +23,21 @@ public class Player_Manager : MonoBehaviour
         if (health <= 0)
         {
             player.GetComponent<Animator>().SetTrigger("isDead");
+            
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //Application.LoadLevel(scene.name);
+        }
+
+        
+    }
+    void Restart() {
+        if (health <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //Application.LoadLevel(scene.name);
         }
     }
-}
-    // Start is called before the first frame update
-    //void Start()
-    // {
-    //   InvokeRepeating("ReduceHealth",1,1);
-    // }
-    //void ReduceHealth() {
-    //health = health -5;
-    //healthBar.value = health;
-      
-   // }
-    // Update is called once per frame
-    //void Update()
-   // {
         
-   // }
-//}
+    } 
+
+   

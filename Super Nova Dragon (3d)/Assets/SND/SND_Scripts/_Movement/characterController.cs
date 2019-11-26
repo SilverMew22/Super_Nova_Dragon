@@ -9,6 +9,7 @@ public class characterController : MonoBehaviour
     public bool onGround;
     private Rigidbody rb;
     Rigidbody myRb;
+    public static bool dead = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class characterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        dead = false;
         float translation = Input.GetAxis("Vertical") * speed;
         float straffe = Input.GetAxis("Horizontal") * speed;
         translation *= Time.deltaTime;
@@ -30,6 +32,8 @@ public class characterController : MonoBehaviour
         transform.Translate(straffe, 0, translation);
         myAnim.SetInteger("state", 0);
         onGround = true;
+
+        if(Player_Manager.health <= 90){ dead = true; }
 
         if (Input.GetKey(KeyCode.W))
             {
@@ -51,13 +55,17 @@ public class characterController : MonoBehaviour
 
         if (onGround)
         {
-            if (Input.GetButtonDown("Jump"))
+           if (Input.GetButtonDown("Jump"))
+            {               
+               onGround = false;
+               myAnim.SetInteger("state", 5);
+           }
+            if (dead==true)
             {
-                rb.velocity = new Vector3(0f, 6f, 0f);
-                onGround = false;
-                myAnim.SetInteger("state", 4);
+                
             }
-        }
+       }
+        
 
 
         if (Input.GetKeyDown("escape"))

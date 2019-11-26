@@ -5,14 +5,42 @@ using UnityEngine;
 public class SpawnTrees : MonoBehaviour
 {
     public GameObject tree;
-    void BuildAWallAtZ(float z)
+
+    void Start()
     {
-        for (int xPos = 0; xPos < 10; xPos++)
-        {
-            for (int yPos = 0; yPos < 5; yPos++)
+            for (int xPos = 0; xPos <= 10; xPos++)
             {
-                Instantiate(tree, new Vector3(xPos * 2 - 10, yPos * 1.5f, z), Quaternion.identity);
+            
+            {
+                Instantiate(tree, new Vector3(xPos * 2f+10f,  2f, 1), Quaternion.identity);
             }
+            }
+
+
+        //for (int xPos = 0; xPos <= 10; xPos++)
+        //{
+            
+        //    {
+        //        Instantiate(tree, new Vector3(xPos * 2f + 5f, 2f, 1), Quaternion.identity);
+        //    }
+        //}
+
+       
+        
+        //    for (int zPos = 0; zPos < 10; zPos++)
+        //    {
+        //        Instantiate(tree, new Vector3(1, 2f, zPos * 2f + 5f), Quaternion.identity);
+        //    }
+        
+
+        
+        
+        //    for (int zPos = 0; zPos < 10; zPos++)
+        //    {
+        //        Instantiate(tree, new Vector3(1, 2f, zPos * 2f + 5f), Quaternion.identity);
+        //    }
         }
     }
-}
+
+    
+

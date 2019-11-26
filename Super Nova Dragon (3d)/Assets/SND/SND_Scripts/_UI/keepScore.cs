@@ -18,6 +18,6 @@ public class keepScore : MonoBehaviour
     }
     void OnGUI()
     {
-        GUI.Box(new Rect(10,10,100,50), Score.ToString());
+        GUI.Box(new Rect(10,50,100,50), Score.ToString());
     }
 }
