@@ -15,7 +15,7 @@ public class Win_Game : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (keepScore.Score >= 10)
+        if (keepScore.Score >= 200)
         {
             if (disabled)
             {
