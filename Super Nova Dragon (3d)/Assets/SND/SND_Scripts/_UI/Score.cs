@@ -11,7 +11,7 @@ public class Score : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag("Nova"))
+        if (col.gameObject.CompareTag("Fire"))
         {
             //collectSound.Play();
             keepScore.Score += 100;

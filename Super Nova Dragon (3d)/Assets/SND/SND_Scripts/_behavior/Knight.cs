@@ -14,7 +14,7 @@ public class Knight : MonoBehaviour
     
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag("Nova"))
+        if (col.gameObject.CompareTag("Fire"))
         {
             //Debug.Log("Nova hit you.");
             Destroy(gameObject);

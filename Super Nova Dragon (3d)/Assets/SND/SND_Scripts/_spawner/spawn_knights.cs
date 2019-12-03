@@ -5,8 +5,8 @@ using UnityEngine;
 public class spawn_knights : MonoBehaviour
 {
     public GameObject clone;
-    public Vector3 spawnLocation;
-    float timer = 20f;
+    private Vector3 spawnLocation;
+    float timer = 15f;
     public Quaternion rotation;
     //public Transform parent;
 
@@ -26,7 +26,7 @@ public class spawn_knights : MonoBehaviour
         else
         {
             Instantiate(clone, spawnLocation, Quaternion.identity);
-            timer = 20;
+            timer = 15;
 
         }        
     }

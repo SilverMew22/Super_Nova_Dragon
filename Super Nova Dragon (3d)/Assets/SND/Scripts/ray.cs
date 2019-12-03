@@ -19,7 +19,8 @@ public class ray : MonoBehaviour
         Debug.DrawRay(laser.origin, laser.direction, Color.green);
         if (Physics.Raycast(laser, out hit, 1000f) && Input.GetMouseButton(0))
         {
-            if (hit.rigidbody) { hit.rigidbody.AddForce(Random.insideUnitSphere * boom_Amt); }
+            //if (hit.rigidbody) { hit.rigidbody.AddForce(Random.insideUnitSphere * boom_Amt); }
+
             Debug.Log("you hit something ..." + hit.transform.gameObject.name);
 
         }

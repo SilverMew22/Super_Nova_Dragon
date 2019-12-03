@@ -4,29 +4,20 @@ using UnityEngine;
 
 public class Spawn_Fire : MonoBehaviour
 {
-    private bool isGettingBigger = false;
-
+    public GameObject fire;
+    public Animator animator;
 
     void Update()
     {
-
-       
-    }
-
-    public void MakeMyBool(bool nextValue)
-    {
-        isGettingBigger = nextValue;
-    }
-
-    void OnCollisionEnter(Collision col)
-    {
-        if ( Input.GetButton("Jump"))
+        if (!Input.GetKey(KeyCode.Space))
         {
-            //Debug.Log("The preditor hit you.");
-            isGettingBigger=true;
-            Dragon_Slayer_health.DS_health -= 20;
-            transform.localScale = new Vector3(1, 1, 1) * (transform.localScale.z + .1f);
+            fire.SetActive(false);
+            animator.enabled = false;
         }
-        else { transform.localScale = Vector3.Lerp(transform.localScale, Vector3.zero, .1f); }
+        else { fire.SetActive(true);
+            animator.enabled = true;
+        }
     }
+
 }
+

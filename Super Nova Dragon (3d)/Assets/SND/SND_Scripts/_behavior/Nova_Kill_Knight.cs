@@ -13,6 +13,7 @@ public class Nova_Kill_Knight : MonoBehaviour
             collectSound.Play();
             keepScore.Score += 100;
             Destroy(gameObject);
+            Debug.Log("you hit something ...");
         }
     }
 }
