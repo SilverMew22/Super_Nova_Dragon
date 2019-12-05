@@ -12,7 +12,7 @@ public class dragon_slayer_damage : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag("Nova") && !Input.GetKey(KeyCode.Space))
+        if (col.gameObject.CompareTag("Nova")&& !Input.GetKey(KeyCode.Space))
         {
             Debug.Log("The slayer hit you.");
             Player_Manager.health -= 10;

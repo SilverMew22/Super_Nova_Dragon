@@ -17,7 +17,8 @@ GameObject:
   - component: {fileID: -9161352478093510688}
   - component: {fileID: 8945685537370763670}
   - component: {fileID: 8188212329802818252}
-  - component: {fileID: -6716245809643876201}
+  - component: {fileID: 1431484801126751926}
+  - component: {fileID: 2750660264254678472}
   m_Layer: 0
   m_Name: dragon slayer (attack)
   m_TagString: Untagged
@@ -92,7 +93,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8505929287554235142}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -160,7 +161,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prey: {fileID: 2624734598839827034, guid: a12ebb82710e74e7c9bb82c52cbc805e, type: 3}
---- !u!54 &-6716245809643876201
+--- !u!114 &1431484801126751926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8505929287554235142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38749ecb4c78b46a0b01f5c57da66e9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prey: {fileID: 0}
+--- !u!54 &2750660264254678472
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,8 +185,8 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 94
+  m_Constraints: 4
   m_CollisionDetection: 0
