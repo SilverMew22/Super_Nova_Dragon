@@ -8,12 +8,12 @@ public class Nova_Kill_Knight : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag("Knight"))
+        if (col.gameObject.CompareTag("Knight") && (Input.GetButton("Space")))
         {
             collectSound.Play();
             keepScore.Score += 100;
             Destroy(gameObject);
-            Debug.Log("you hit something ...");
+            Debug.Log("Nova hit a knight...");
         }
     }
 }

@@ -14,7 +14,7 @@ public class Knight : MonoBehaviour
     
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag("Fire"))
+        if (col.gameObject.CompareTag("Nova") && Input.GetKey(KeyCode.Space))
         {
             //Debug.Log("Nova hit you.");
             Destroy(gameObject);

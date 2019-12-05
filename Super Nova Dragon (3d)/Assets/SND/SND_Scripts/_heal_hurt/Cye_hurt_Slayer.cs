@@ -12,7 +12,7 @@ public class Cye_hurt_Slayer : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag("Fire"))
+        if (col.gameObject.CompareTag("Nova") && Input.GetKey(KeyCode.Space))
         {
             //Debug.Log("The preditor hit you.");
             Dragon_Slayer_health.DS_health -= 5;

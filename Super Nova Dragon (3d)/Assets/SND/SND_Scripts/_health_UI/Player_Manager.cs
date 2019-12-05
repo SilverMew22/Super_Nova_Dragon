@@ -8,8 +8,9 @@ public class Player_Manager : MonoBehaviour
 {
     public static float health = 100;
     public GameObject player;
+    public GameObject player_ani;
     public Image healthBar;
-    private Scene scene;
+    public Scene scene;
 
     void Start()
     {
@@ -23,10 +24,13 @@ public class Player_Manager : MonoBehaviour
         if (health <= 0)
         {
             player.GetComponent<Animator>().SetTrigger("isDead");
-            
+            player_ani.SetActive(false);
+
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             //Application.LoadLevel(scene.name);
         }
+
+        
 
         
     }

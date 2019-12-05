@@ -20,9 +20,10 @@ public class Uni_Health_System_Up : MonoBehaviour
 
         if (U_health <= 0f)
         {
-            Destroy(gameObject);
-            U_health_Drained();
-            healthBar.fillAmount = timer += Time.deltaTime/100f;
+            //Destroy(gameObject);
+           // U_health_Drained();
+           // healthBar.fillAmount = timer += Time.deltaTime/100f;
+            Uni.GetComponent<Animator>().SetTrigger("isCon");
         }
 
     if (timer >= 0f)
@@ -40,14 +41,15 @@ public class Uni_Health_System_Up : MonoBehaviour
 
 
     void U_health_Drained() {
-        Instantiate(clone, spawnLocation_cas, Quaternion.identity);
+        //Instantiate(clone, spawnLocation_cas, Quaternion.identity);
         //U_health = timer += Time.deltaTime;
         healthBar.fillAmount += Time.deltaTime/1f;
 
-        if (U_health >= 100f) {
-            U_health = 100;                      
-            Destroy(gameObject);
-            Instantiate(clone, spawnLocation_ground, Quaternion.identity);
+        if (U_health >= 0f) {
+            U_health = 0;                      
+            //Destroy(gameObject);
+            //Instantiate(clone, spawnLocation_ground, Quaternion.identity);
+            Uni.GetComponent<Animator>().SetTrigger("isCon");
 
         }                      
         }        

@@ -6,7 +6,7 @@ public class spawn_knights : MonoBehaviour
 {
     public GameObject clone;
     private Vector3 spawnLocation;
-    float timer = 15f;
+    float timer = 5f;
     public Quaternion rotation;
     //public Transform parent;
 
@@ -26,8 +26,10 @@ public class spawn_knights : MonoBehaviour
         else
         {
             Instantiate(clone, spawnLocation, Quaternion.identity);
-            timer = 15;
+            timer = 5;
 
-        }        
+        }
+       // if (Player_Manager.health <= 0f || Castle_Health_System.Cas_health <= 0f)
+       // { clone.SetActive(false); }
     }
 }
