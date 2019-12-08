@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Nova_hurt_DS : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,7 @@ public class Nova_hurt_DS : MonoBehaviour
         {
             //Debug.Log("The preditor hit you.");
             Dragon_Slayer_health.DS_health -= 5;
-
+            
 
         }
     }

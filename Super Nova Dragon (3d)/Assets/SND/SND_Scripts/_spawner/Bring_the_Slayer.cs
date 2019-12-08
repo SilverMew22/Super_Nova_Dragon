@@ -23,8 +23,8 @@ public class Bring_the_Slayer : MonoBehaviour
         {
             DS.SetActive(true);
         }
-        else
-            DS.SetActive(false);
+        //else
+           // DS.SetActive(false);
     }
     
     }
