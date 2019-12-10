@@ -9,22 +9,22 @@ public class Bring_the_Slayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Player_Manager.health <= 0 || Castle_Health_System.Cas_health <= 0)
-        { DS.SetActive(false); }
+        //if (Player_Manager.health <= 0 || Castle_Health_System.Cas_health <= 0)
+        //{ DS.SetActive(false); }
 
-        if (keepScore.Score >= 10)
+        if (keepScore.Score <= 25) 
 
         {
             DS.SetActive(true);
         }
-        //else
-           // DS.SetActive(false);
+        //else if (keepScore.Score >= 35) {DS.SetActive(false); }
+             
     }
     
     }

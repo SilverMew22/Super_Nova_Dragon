@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4717751742203617395}
   - component: {fileID: 4333540954193123909}
   - component: {fileID: 8007221891599312572}
-  - component: {fileID: 288906542468516725}
   - component: {fileID: 288906542468516724}
+  - component: {fileID: 2142120921412339909}
   m_Layer: 0
   m_Name: CAS_new
   m_TagString: Castle
@@ -61,7 +61,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: -876546973899608171, guid: af8005ae4bdd3bd448782d96bfdf6a86, type: 3}
   - {fileID: -3846018093981099296, guid: af8005ae4bdd3bd448782d96bfdf6a86, type: 3}
-  - {fileID: -6478536213147159724, guid: af8005ae4bdd3bd448782d96bfdf6a86, type: 3}
+  - {fileID: 2100000, guid: 52cd680abaab84caca32489aac8d2f22, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,18 +81,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &288906542468516725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8584859170410336864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 169aaff53fa73474e96a3224c9fa8396, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &288906542468516724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -106,3 +94,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.034, y: 0.021, z: 0.045}
   m_Center: {x: 0, y: -0.00043618446, z: 0.012098046}
+--- !u!114 &2142120921412339909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8584859170410336864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce689f0028344678aaa8bd7df71fbfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

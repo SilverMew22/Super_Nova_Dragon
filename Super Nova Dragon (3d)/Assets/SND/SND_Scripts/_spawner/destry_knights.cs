@@ -6,9 +6,9 @@ public class destry_knights : MonoBehaviour
 {
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag("cleanUp"))
+        if (col.gameObject.CompareTag("Castle"))
         {
-            Debug.Log("erase knight");
+            Debug.Log("knight erased");
             Destroy(gameObject);
            
 

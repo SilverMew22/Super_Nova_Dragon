@@ -10,11 +10,12 @@ public class Player_Manager : MonoBehaviour
     public GameObject player;
     public GameObject player_ani;
     public Image healthBar;
-    public Scene scene;
+    public GameObject sparkle;
+    //public Scene scene;
 
     void Start()
     {
-        scene = SceneManager.GetActiveScene();
+        //scene = SceneManager.GetActiveScene();
         //if (health <= 0) {Restart(); }
     }
 
@@ -25,22 +26,20 @@ public class Player_Manager : MonoBehaviour
         {
             player.GetComponent<Animator>().SetTrigger("isDead");
             player_ani.SetActive(false);
-
+            sparkle.SetActive(true);
+            //player.SetActive(false);
             //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             //Application.LoadLevel(scene.name);
         }
 
-        
-
-        
-    }
-    void Restart() {
-        if (health <= 0)
+        if (Fire_duration.fire_health <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            //Application.LoadLevel(scene.name);
+            sparkle.SetActive(true);
+            healthBar.fillAmount = health / 20;
         }
+        
     }
+    
         
     } 
 

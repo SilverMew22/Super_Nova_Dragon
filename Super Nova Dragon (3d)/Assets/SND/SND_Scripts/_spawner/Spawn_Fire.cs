@@ -18,6 +18,7 @@ public class Spawn_Fire : MonoBehaviour
             fire.SetActive(true);
             
         }
+
     }
 
 }
