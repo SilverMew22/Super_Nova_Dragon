@@ -180,7 +180,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2668df21964747adbc382161dc33b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sparkle: {fileID: 0}
 --- !u!1 &721750874377927133
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Win_Game : MonoBehaviour
 {
     public GameObject objectToDisable;
+    public GameObject knight;
     public static bool disabled = false;
     // Start is called before the first frame update
     void Start()
@@ -20,9 +21,11 @@ public class Win_Game : MonoBehaviour
             if (disabled)
             {
                 objectToDisable.SetActive(false);
-            }
+                knight.SetActive(false);
+}
             else
                 objectToDisable.SetActive(true);
+                knight.SetActive(true);
         }
        
 

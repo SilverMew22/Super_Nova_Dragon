@@ -15,6 +15,7 @@ TagManager:
   - Cye
   - DS
   - cleanUp
+  - spawner
   layers:
   - Default
   - TransparentFX
