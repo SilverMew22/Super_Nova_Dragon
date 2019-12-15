@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
 //    private ParticleSystem sparkle;
-    //public AudioSource collectSound;
+    public AudioSource collectSound;
     private void Start()
     {
 //        sparkle.Play(false);
@@ -17,7 +17,7 @@ public class Score : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Fire"))
         {
-            //collectSound.Play();
+            collectSound.Play();
             keepScore.Score += 100;
             Destroy(gameObject);
             //sparkle.Play(true);

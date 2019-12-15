@@ -62,11 +62,9 @@ public class characterController : MonoBehaviour
            }
             if (dead==true)
             {
-                
+                //speed = 0f;
             }
        }
-        
-
 
         if (Input.GetKeyDown("escape"))
         {
